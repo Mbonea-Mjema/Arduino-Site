@@ -59,16 +59,16 @@ rootObj.Digital=data
     var obj = JSON.parse(message.toString());
    rootObj.toastr.infoToastr('MQTT Message', 'Message Received')
    this.audio.play();
-    temp= obj['arduino_lab']['Digital']
-    var keys = Object.keys(temp)
-    keys.map((x)=>{
-      //console.log(temp[x])
-      if(temp[x]==1){
-        temp[x]=true
-      }else{
-      temp[x]=false
-     } })
-      //console.log(temp)
+    // temp= obj['arduino_lab']['Digital']
+    // var keys = Object.keys(temp)
+    // keys.map((x)=>{
+    //   //console.log(temp[x])
+    //   if(temp[x]==1){
+    //     temp[x]=true
+    //   }else{
+    //   temp[x]=false
+    //  } })
+    //   //console.log(temp)
       rootObj.keys=keys
       rootObj.Digital=temp
       //console.log(rootObj)

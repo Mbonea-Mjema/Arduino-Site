@@ -71,11 +71,12 @@
     <div class="col-md-4 mb-4">
       <div class="card h-100">
         <div class="card-body">
-          <h2 class="card-title">A0</h2>
+          <h2 class="card-title">{{Dummy}}</h2>
+          <input type="text" [formControl]="Formula" class="form-control" id="exampleInputPassword1" >
           <p class="card-text"></p>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-primary">More Info</a>
+          <a class="btn btn-primary" (click)="Calculate()">Get</a>
         </div>
       </div>
     </div>
